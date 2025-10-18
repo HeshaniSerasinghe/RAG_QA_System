@@ -1,0 +1,8 @@
+arxiv 
+pymupdf 
+tqdm
+sentence-transformers 
+chromadb 
+torch
+dvc 
+mlflow
