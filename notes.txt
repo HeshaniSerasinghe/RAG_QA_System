@@ -1,2 +1,4 @@
 .\venv\Scripts\activate
 
+What is the LoRA technique for fine-tuning?
+Who won the Cricket World Cup?

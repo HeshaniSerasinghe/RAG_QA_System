@@ -12,3 +12,5 @@ __pycache__/
 mlruns/
 /data
 /chroma_db
+
+notes.txt
