@@ -6,7 +6,7 @@ import logging
 from tqdm import tqdm
 
 # --- Configuration ---
-SEARCH_QUERY = "Large Language Models"
+SEARCH_QUERY = "Large Language Models" # Example search query
 MAX_RESULTS = 100 # Let's start with 100 papers
 OUTPUT_DIR = "data/raw"
 

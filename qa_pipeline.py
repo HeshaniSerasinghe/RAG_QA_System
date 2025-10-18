@@ -12,7 +12,7 @@ DB_PATH = "chroma_db"
 COLLECTION_NAME = "arxiv_papers"
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 LLM_MODEL_NAME = "phi3"
-RELEVANCE_THRESHOLD = 1.3  # <<< --- NEW GUARD RAIL ---
+RELEVANCE_THRESHOLD = 1.3  # <<< --- GUARD RAIL ---
                            # (Tune this value. 1.0 is a good start)
 
 # --- Setup Logging ---
@@ -43,11 +43,11 @@ def main():
         # 1. Embed the query
         query_embedding = embedding_model.encode(query).tolist()
 
-        # 2. Retrieve context (NOW INCLUDES DISTANCES)
+        # 2. Retrieve context ( include distances for guard rail )
         results = collection.query(
             query_embeddings=[query_embedding],
             n_results=5,
-            include=['documents', 'distances']  # <<< --- ADD 'distances' ---
+            include=['documents', 'distances']  
         )
         
         best_distance = results['distances'][0][0]
