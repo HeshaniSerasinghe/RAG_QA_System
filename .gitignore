@@ -10,3 +10,5 @@ __pycache__/
 
 # MLflow
 mlruns/
+/data
+/chroma_db
