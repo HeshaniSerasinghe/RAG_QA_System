@@ -13,4 +13,8 @@ mlruns/
 /data
 /chroma_db
 
+# Ignore personal notes file
 notes.txt
+
+# Ignore PDF notes
+note.pdf
